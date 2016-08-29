@@ -5,5 +5,5 @@
 
 ## How to use player as a standalone in another page
 1. npm run build
-2. set a global video url <script>window.VIDEO_URL = {video_url}</script>
+2. set a global video url ```javascript <script>window.VIDEO_URL = {video_url}</script> ```
 3. Include the build assets files in the header of your page.
