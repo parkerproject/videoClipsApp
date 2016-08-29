@@ -1,7 +1,8 @@
+/* global window */
 import React, { Component } from 'react';
 import ReactPlayer from 'react-player';
 
-const VIDEO_URL = 'http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4';
+const VIDEO_URL = window.VIDEO_URL || 'http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4';
 
 class Video extends Component {
 
@@ -26,7 +27,6 @@ class Video extends Component {
           onDuration={this.duration}
           onEnded={this.ended}
           onPause={this.props.handlePause}
-          onProgress={this.props.handleProgress}
         />
         <div id="bar">
           <div id="progress" />
